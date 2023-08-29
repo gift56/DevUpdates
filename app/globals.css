@@ -7,3 +7,15 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
+.flexCenter {
+  @apply flex justify-center items-center;
+}
+
+.flexBetween {
+  @apply flex justify-between items-center;
+}
+
+.flexStart {
+  @apply flex items-center justify-start;
+}
