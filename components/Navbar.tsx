@@ -9,10 +9,11 @@ const Navbar = () => {
           <Image
             src="/img/logo.svg"
             alt="Dev_updates"
-            width={116}
+            width={146}
             height={43}
           />
         </Link>
+        <ul className="xl:flex hidden text-small gap-7"></ul>
       </div>
     </nav>
   );
