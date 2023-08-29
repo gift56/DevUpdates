@@ -1,6 +1,7 @@
 import { NavLinks } from "@/constant";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./Button";
 
 const Navbar = () => {
   const session = {};
@@ -23,19 +24,19 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
-        <div className="flexCenter gap-4">
-          {session?.user ? (
-            <>
-              <ProfileMenu session={session} />
+      </div>
+      <div className="flexCenter gap-4">
+        {session ? (
+          <>
+            {/* <ProfileMenu session={session} /> */}
 
-              <Link href="/create-project">
-                <Button title="Share work" />
-              </Link>
-            </>
-          ) : (
-            <AuthProviders />
-          )}
-        </div>
+            <Link href="/create-project">
+              <Button title="Share work" />
+            </Link>
+          </>
+        ) : (
+          <AuthProviders />
+        )}
       </div>
     </nav>
   );
