@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   const session = {};
-  
+
   return (
     <nav className="flexBetween navbar">
       <div className="flex-1 flexStart gap-10">
@@ -23,6 +23,19 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
+        <div className="flexCenter gap-4">
+          {session?.user ? (
+            <>
+              <ProfileMenu session={session} />
+
+              <Link href="/create-project">
+                <Button title="Share work" />
+              </Link>
+            </>
+          ) : (
+            <AuthProviders />
+          )}
+        </div>
       </div>
     </nav>
   );
