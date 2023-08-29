@@ -13,7 +13,9 @@ const Navbar = () => {
             height={43}
           />
         </Link>
-        <ul className="xl:flex hidden text-small gap-7"></ul>
+        <ul className="xl:flex hidden text-small gap-7">
+          
+        </ul>
       </div>
     </nav>
   );
