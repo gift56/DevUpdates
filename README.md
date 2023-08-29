@@ -17,7 +17,9 @@ In this video, you'll learn: Alongside building this application, you'll also le
 
 #### Dependencies
 
+- next-auth
 - @headlessui/react
+- graphql-request
 - cloudinary
 - jsonwebtoken
 - @types/jsonwebtoken
