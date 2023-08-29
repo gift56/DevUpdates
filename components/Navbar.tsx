@@ -1,3 +1,4 @@
+import { NavLinks } from "@/constant";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,7 +15,11 @@ const Navbar = () => {
           />
         </Link>
         <ul className="xl:flex hidden text-small gap-7">
-          
+          {NavLinks.map((link) => (
+            <Link href={link.href} key={link.text}>
+              {link.text}
+            </Link>
+          ))}
         </ul>
       </div>
     </nav>
