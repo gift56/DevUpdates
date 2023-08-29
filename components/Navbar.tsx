@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AuthProviders, Button } from ".";
 
 const Navbar = () => {
-  const session = {};
+  const session = null;
 
   return (
     <nav className="flexBetween navbar">
