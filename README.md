@@ -13,3 +13,11 @@ In this video, you'll learn: Alongside building this application, you'll also le
 - Handle image uploads
 - Understanding and writing proper TypeScript
 - Learn Grafbase - a serverless GraphQL platform
+
+
+#### Dependencies
+
+- @headlessui/react
+- cloudinary
+- jsonwebtoken
+- @types/jsonwebtoken
