@@ -1,8 +1,7 @@
-import { Metadata } from "next";
 import "./globals.css";
 import { Footer, Navbar } from "@/components";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Dev Updates",
   description:
     "Showcase and discover remarkable developer projects and Tutorial guides",
