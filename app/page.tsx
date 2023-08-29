@@ -1,5 +1,3 @@
-
-
 const Homepage = () => {
   return (
     <section className="flexStart flex-col paddings mb-16">
