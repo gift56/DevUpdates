@@ -30,4 +30,8 @@ export const authOptions: NextAuthOptions = {
       return decodedToken as JWT;
     },
   },
+  theme: {
+    colorScheme: "light",
+    logo: "/logo.svg",
+  },
 };
