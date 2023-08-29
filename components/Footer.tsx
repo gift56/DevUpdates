@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <footer>Footer</footer>;
+  return <footer className="flexStart footer">Footer</footer>;
 };
 
 export default Footer;
