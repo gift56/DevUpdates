@@ -32,6 +32,6 @@ export const authOptions: NextAuthOptions = {
   },
   theme: {
     colorScheme: "light",
-    logo: "/logo.svg",
+    logo: "/img/logo.svg",
   },
 };
