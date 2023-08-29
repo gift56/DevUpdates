@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="flex items-start flex-col">
           <Image
             src="/img/logo.svg"
-            width={146}
+            width={156}
             height={43}
             alt="footer_logo"
           />
@@ -79,7 +79,7 @@ const Footer = () => {
       </div>
 
       <div className="flexBetween footer_copyright">
-        <p>@ 2023 Flexibble. All rights reserved</p>
+        <p>© 2023 Flexibble. All rights reserved</p>
         <p className="text-gray">
           <span className="text-black font-semibold">10,214</span> projects
           submitted
