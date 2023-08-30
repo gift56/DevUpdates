@@ -26,12 +26,7 @@ const Footer = () => {
     <footer className="flexStart footer">
       <div className="flex flex-col gap-12 w-full">
         <div className="flex items-start flex-col">
-          <Image
-            src="/img/logo.svg"
-            width={156}
-            height={43}
-            alt="footer_logo"
-          />
+          <img src="/img/logo.svg" alt="Dev_updates" width={146} height={43} />
 
           <p className="text-start text-sm font-normal mt-5 max-w-xs">
             GeniusX is the world&apos;s leading community for creatives to
