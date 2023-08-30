@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { MouseEventHandler } from "react";
 
 type Props = {
@@ -32,13 +31,13 @@ const Button = ({
         } rounded-xl text-sm font-medium max-md:w-full hover:opacity-95 transition-all duration-300 disabled:opacity-90 disabled:cursor-not-allowed`}
     onClick={handleClick}
   >
-    {leftIcon && (
+    {/* {leftIcon && (
       <Image src={leftIcon} width={14} height={14} alt="left icon" />
-    )}
+    )} */}
     {title}
-    {rightIcon && (
+    {/* {rightIcon && (
       <Image src={rightIcon} width={14} height={14} alt="right icon" />
-    )}
+    )} */}
   </button>
 );
 
