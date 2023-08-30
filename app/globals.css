@@ -38,6 +38,11 @@
   border-radius: 12px;
 }
 
+img{
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 .modal-head-text {
   @apply md:text-5xl text-3xl font-extrabold text-left max-w-5xl w-full;
 }
