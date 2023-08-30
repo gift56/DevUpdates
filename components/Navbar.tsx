@@ -7,6 +7,8 @@ import { getCurrentUser } from "@/lib/session";
 const Navbar = async () => {
   const session = await getCurrentUser();
 
+  console.log(session);
+
   return (
     <nav className="flexBetween navbar">
       <div className="flex-1 flexStart gap-10">
@@ -30,7 +32,6 @@ const Navbar = async () => {
         {session?.user ? (
           <>
             <ProfileMenu session={session} />
-
             <Link href="/create-project">
               <Button title="Share work" />
             </Link>
