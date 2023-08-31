@@ -1,14 +1,14 @@
 import { ProjectInterface } from "@/common.types";
-
+import { fetchAllProjects } from "@/lib/actions";
 
 type SearchParams = {
   category?: string | null;
   endcursor?: string | null;
-}
+};
 
 type Props = {
-  searchParams: SearchParams
-}
+  searchParams: SearchParams;
+};
 
 type ProjectSearch = {
   projectSearch: {
@@ -22,7 +22,8 @@ type ProjectSearch = {
   };
 };
 
-const Homepage = () => {
+const Homepage = async ({ searchParams: { category, endcursor } }: Props) => {
+  const data = (await fetchAllProjects(category, endcursor)) as ProjectSearch;
   return (
     <section className="flexStart flex-col paddings mb-16">
       <h1>Catergory</h1>
