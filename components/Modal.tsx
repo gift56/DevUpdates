@@ -2,7 +2,7 @@
 
 import { useCallback, useRef, ReactNode } from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
+import { MdClose } from "react-icons/md";
 
 const Modal = ({ children }: { children: ReactNode }) => {
   const overlay = useRef<HTMLDivElement>(null);
@@ -24,13 +24,15 @@ const Modal = ({ children }: { children: ReactNode }) => {
 
   return (
     <div ref={overlay} className="modal" onClick={(e) => handleClick(e)}>
-      <button
-        type="button"
-        onClick={onDismiss}
-        className="absolute top-4 right-8"
-      >
-        <Image src="/close.svg" width={17} height={17} alt="close" />
-      </button>
+      <div className="w-full flex items-center justify-end pr-10">
+        <button
+          type="button"
+          onClick={onDismiss}
+          className="text-red-500 cursor-pointer"
+        >
+          <MdClose size={30} />
+        </button>
+      </div>
 
       <div ref={wrapper} className="modal_wrapper">
         {children}
