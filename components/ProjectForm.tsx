@@ -89,6 +89,12 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
           />
         )}
       </div>
+      <FormField
+        title="Title"
+        state={form.title}
+        placeholder="Flexibble"
+        setState={(value) => handleStateChange("title", value)}
+      />
     </form>
   );
 };
