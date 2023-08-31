@@ -2,7 +2,7 @@
 
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
-import Image from "next/image";
+import { FiChevronDown } from "react-icons/fi";
 
 type Props = {
   title: string;
