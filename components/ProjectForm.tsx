@@ -67,7 +67,7 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
                 <FiUpload size={30} />
               </span>
               <span className="text-base font-normal text-gray-100 max-w-[400px] text-center">
-                Click to browse image on your project.
+                Click to browse poster images for your project.
               </span>
             </div>
           )}
