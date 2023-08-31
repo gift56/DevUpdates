@@ -8,6 +8,7 @@ import { FiUpload } from "react-icons/fi";
 import FormField from "./FormField";
 import { Button, CustomMenu } from ".";
 import { categoryFilters } from "@/constant";
+import { createNewProject, fetchToken, updateProject } from "@/lib/actions";
 
 type ProjectProps = {
   type: string;
@@ -61,10 +62,28 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
 
     setSubmitting(true);
 
+    const { token } = await fetchToken();
+
     try {
-      
+      if (type === "create") {
+        await createNewProject(form, session?.user?.id, token);
+
+        router.push("/");
+      }
+
+      if (type === "edit") {
+        await updateProject(form, project?.id as string, token);
+
+        router.push("/");
+      }
     } catch (error) {
-      
+      alert(
+        `Failed to ${
+          type === "create" ? "create" : "edit"
+        } a project. Try again!`
+      );
+    } finally {
+      setSubmitting(false);
     }
   };
 
