@@ -24,6 +24,7 @@ const config: Config = {
       },
       boxShadow: {
         menu: "0px 159px 95px rgba(13,12,34,0.01), 0px 71px 71px rgba(13,12,34,0.02), 0px 18px 39px rgba(13,12,34,0.02), 0px 0px 0px rgba(13,12,34,0.02)",
+        inputShad: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)",
       },
       screens: {
         xs: "400px",
