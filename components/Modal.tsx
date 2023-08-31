@@ -28,7 +28,7 @@ const Modal = ({ children }: { children: ReactNode }) => {
         <button
           type="button"
           onClick={onDismiss}
-          className="text-red-500 cursor-pointer"
+          className="text-light-white-200 cursor-pointer"
         >
           <MdClose size={30} />
         </button>
