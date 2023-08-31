@@ -10,6 +10,7 @@ type Props = {
   type?: "button" | "submit";
   bgColor?: string;
   textColor?: string;
+  className?: string;
 };
 
 const Button = ({
@@ -21,6 +22,7 @@ const Button = ({
   type,
   bgColor,
   textColor,
+  className,
 }: Props) => (
   <button
     type={type || "button"}
@@ -29,7 +31,7 @@ const Button = ({
         ${textColor ? textColor : "text-white"} 
         ${
           submitting ? "bg-black/50" : bgColor ? bgColor : "bg-primary-purple"
-        } rounded-xl text-base font-medium max-md:w-full hover:opacity-95 transition-all duration-300 disabled:opacity-90 disabled:cursor-not-allowed`}
+        } rounded-xl text-base font-medium max-md:w-full hover:opacity-95 transition-all duration-300 disabled:opacity-90 disabled:cursor-not-allowed ${className}`}
     onClick={handleClick}
   >
     {leftIcon && <BiPlus size={25} />}

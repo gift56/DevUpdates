@@ -131,6 +131,7 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
           type="submit"
           leftIcon={submitting ? "" : "/plus.svg"}
           submitting={submitting}
+          className="lg:px-14"
         />
       </div>
     </form>
