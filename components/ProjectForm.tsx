@@ -60,6 +60,12 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
     e.preventDefault();
 
     setSubmitting(true);
+
+    try {
+      
+    } catch (error) {
+      
+    }
   };
 
   return (
