@@ -58,6 +58,8 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
 
   const handleFormSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
+    setSubmitting(true);
   };
 
   return (
