@@ -147,7 +147,7 @@ img {
 
 /* Project Form */
 .form {
-  @apply flex-col w-full lg:pt-24 pt-12 gap-10 text-lg max-w-5xl mx-auto;
+  @apply flex-col w-full lg:pt-20 pt-12 gap-10 text-lg max-w-5xl mx-auto;
 }
 
 .form_image-container {
@@ -155,7 +155,7 @@ img {
 }
 
 .form_image-label {
-  @apply z-10 text-center w-full h-full p-16 text-gray-100 border-2 border-gray-50 border-dashed;
+  @apply z-10 text-center w-full h-full p-16 pb-8 text-gray-100 border-2 border-gray-50 border-dashed;
 }
 
 .form_image-input {
