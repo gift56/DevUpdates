@@ -24,6 +24,9 @@ type ProjectSearch = {
 
 const Homepage = async ({ searchParams: { category, endcursor } }: Props) => {
   const data = (await fetchAllProjects(category, endcursor)) as ProjectSearch;
+
+  const projectsToDisplay = data?.projectSearch?.edges || [];
+  
   return (
     <section className="flexStart flex-col paddings mb-16">
       <h1>Catergory</h1>
