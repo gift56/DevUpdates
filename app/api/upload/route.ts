@@ -7,12 +7,6 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_SECRET,
 });
 
-          
-cloudinary.config({ 
-  cloud_name: 'efegift', 
-  api_key: '696486385227327', 
-  api_secret: 'ZH80tIayNfPYk3xNh8OeHXpqeZA' 
-});
 
 export async function POST(request: Request) {
   const { path } = await request.json();
