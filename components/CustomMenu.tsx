@@ -21,7 +21,7 @@ const CustomMenu = ({ title, state, filters, setState }: Props) => {
         <div>
           <Menu.Button className="flexCenter custom_menu-btn">
             {state || "Select Category"}
-            <FiChevronDown size={30} />
+            <FiChevronDown size={17} />
           </Menu.Button>
         </div>
         <Transition
