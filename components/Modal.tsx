@@ -24,7 +24,7 @@ const Modal = ({ children }: { children: ReactNode }) => {
 
   return (
     <div ref={overlay} className="modal" onClick={(e) => handleClick(e)}>
-      <div className="w-full flex items-center justify-end pr-10">
+      <div className="w-full flex items-center justify-end pr-5">
         <button
           type="button"
           onClick={onDismiss}
