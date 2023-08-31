@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { FiUpload } from "react-icons/fi";
 import FormField from "./FormField";
-import { Button } from ".";
+import { Button, CustomMenu } from ".";
+import { categoryFilters } from "@/constant";
 
 type ProjectProps = {
   type: string;
@@ -119,6 +120,13 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
         state={form.githubUrl}
         placeholder="https://github.com/gift56"
         setState={(value) => handleStateChange("githubUrl", value)}
+      />
+
+      <CustomMenu
+        title="Category"
+        state={form.category}
+        filters={categoryFilters}
+        setState={(value) => handleStateChange("category", value)}
       />
 
       <div className="flexStart w-full">
