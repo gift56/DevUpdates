@@ -5,6 +5,7 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { FiUpload } from "react-icons/fi";
+import FormField from "./FormField";
 
 type ProjectProps = {
   type: string;
@@ -89,7 +90,7 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
           />
         )}
       </div>
-      <FormField
+      <FormField  
         title="Title"
         state={form.title}
         placeholder="Flexibble"

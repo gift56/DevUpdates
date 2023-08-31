@@ -115,7 +115,7 @@ img {
 
 /* Form Field */
 .form_field-input {
-  @apply w-full outline-0 bg-light-white-100 rounded-xl p-4;
+  @apply w-full outline-0 bg-white border-light-white-100 border-2 focus:border-primary-purple transition-all duration-300 rounded-xl px-4 h-14;
 }
 
 /* Modal */
