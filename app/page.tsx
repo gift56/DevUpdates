@@ -1,6 +1,7 @@
 import { ProjectInterface } from "@/common.types";
 import { Categories } from "@/components";
 import { fetchAllProjects } from "@/lib/actions";
+import Link from "next/link";
 
 type SearchParams = {
   category?: string | null;
@@ -33,9 +34,12 @@ const Homepage = async ({ searchParams: { category, endcursor } }: Props) => {
       <section className="flexStart flex-col paddings">
         <Categories />
 
-        <p className="no-result-text text-center">No projects found, go create some first.</p>
+        <p className="no-result-text text-center">
+          No projects found, 😥. Click <Link href="/create-project">Share Project</Link> to get
+          started.
+        </p>
       </section>
-    )
+    );
   }
 
   return (
