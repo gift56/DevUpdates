@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { FiUpload } from "react-icons/fi";
 import FormField from "./FormField";
+import { Button } from ".";
 
 type ProjectProps = {
   type: string;
@@ -119,6 +120,19 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
         placeholder="https://github.com/gift56"
         setState={(value) => handleStateChange("githubUrl", value)}
       />
+
+      <div className="flexStart w-full">
+        <Button
+          title={
+            submitting
+              ? `${type === "create" ? "Creating" : "Editing"}`
+              : `${type === "create" ? "Create" : "Edit"}`
+          }
+          type="submit"
+          leftIcon={submitting ? "" : "/plus.svg"}
+          submitting={submitting}
+        />
+      </div>
     </form>
   );
 };

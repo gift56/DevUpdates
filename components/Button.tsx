@@ -1,4 +1,5 @@
 import { MouseEventHandler } from "react";
+import { BiPlus } from "react-icons/bi";
 
 type Props = {
   title: string;
@@ -31,9 +32,7 @@ const Button = ({
         } rounded-xl text-sm font-medium max-md:w-full hover:opacity-95 transition-all duration-300 disabled:opacity-90 disabled:cursor-not-allowed`}
     onClick={handleClick}
   >
-    {/* {leftIcon && (
-      <Image src={leftIcon} width={14} height={14} alt="left icon" />
-    )} */}
+    {leftIcon && <BiPlus />}
     {title}
     {/* {rightIcon && (
       <Image src={rightIcon} width={14} height={14} alt="right icon" />
