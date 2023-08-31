@@ -3,7 +3,8 @@
 import { FormState, ProjectInterface, SessionInterface } from "@/common.types";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
-import Image from 'next/image';
+import Image from "next/image";
+import { FiUpload } from "react-icons/fi";
 
 type ProjectProps = {
   type: string;
@@ -60,7 +61,16 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
     <form onSubmit={handleFormSubmit} className="flexStart form">
       <div className="flexStart form_image-container">
         <label htmlFor="poster" className="flexCenter form_image-label">
-          {!form.image && "Choose a poster for your project"}
+          {!form.image && (
+            <div className="flex flex-col items-center justify-center gap-4">
+              <span className="text-black">
+                <FiUpload size={30} />
+              </span>
+              <span className="text-base font-normal text-gray-100 max-w-[400px] text-center">
+                Click to browse image on your project.
+              </span>
+            </div>
+          )}
         </label>
         <input
           id="image"
