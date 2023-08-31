@@ -90,11 +90,34 @@ const ProjectForm = ({ type, session, project }: ProjectProps) => {
           />
         )}
       </div>
-      <FormField  
+      <FormField
         title="Title"
         state={form.title}
         placeholder="GeniusX"
         setState={(value) => handleStateChange("title", value)}
+      />
+      <FormField
+        title="Description"
+        state={form.description}
+        placeholder="Showcase and discover remarkable developer projects."
+        isTextArea
+        setState={(value) => handleStateChange("description", value)}
+      />
+
+      <FormField
+        type="url"
+        title="Website URL"
+        state={form.liveSiteUrl}
+        placeholder="https://giftedprofile.netlify.app"
+        setState={(value) => handleStateChange("liveSiteUrl", value)}
+      />
+
+      <FormField
+        type="url"
+        title="GitHub URL"
+        state={form.githubUrl}
+        placeholder="https://github.com/gift56"
+        setState={(value) => handleStateChange("githubUrl", value)}
       />
     </form>
   );

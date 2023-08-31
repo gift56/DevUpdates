@@ -23,7 +23,7 @@ const FormField = ({
         <textarea
           placeholder={placeholder}
           value={state}
-          className="form_field-input"
+          className="form_field-textarea"
           onChange={(e) => setState(e.target.value)}
         />
       ) : (
