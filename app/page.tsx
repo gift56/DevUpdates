@@ -25,22 +25,22 @@ type ProjectSearch = {
 };
 
 const Homepage = async ({ searchParams: { category, endcursor } }: Props) => {
-  const data = (await fetchAllProjects(category, endcursor)) as ProjectSearch;
+  const data = await fetchAllProjects() as ProjectSearch;
 
-  const projectsToDisplay = data?.projectSearch?.edges || [];
+  // const projectsToDisplay = data?.projectSearch?.edges || [];
 
-  if (projectsToDisplay.length === 0) {
-    return (
-      <section className="flexStart flex-col paddings">
-        <Categories />
+  // if (projectsToDisplay.length === 0) {
+  //   return (
+  //     <section className="flexStart flex-col paddings">
+  //       <Categories />
 
-        <p className="no-result-text text-center">
-          No projects found, 😥. Click <Link href="/create-project" className="font-semibold text-primary-purple">Share Project</Link> to get
-          started.
-        </p>
-      </section>
-    );
-  }
+  //       <p className="no-result-text text-center">
+  //         No projects found, 😥. Click <Link href="/create-project" className="font-semibold text-primary-purple">Share Project</Link> to get
+  //         started.
+  //       </p>
+  //     </section>
+  //   );
+  // }
 
   return (
     <section className="flexStart flex-col paddings mb-16">
