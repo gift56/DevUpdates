@@ -20,7 +20,7 @@ const CustomMenu = ({ title, state, filters, setState }: Props) => {
       <Menu as="div" className="self-start relative">
         <div>
           <Menu.Button className="flexCenter custom_menu-btn">
-            {state || "Category"}
+            {state || "Select Category"}
             <FiChevronDown size={30} />
           </Menu.Button>
         </div>
