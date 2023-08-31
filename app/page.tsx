@@ -35,7 +35,7 @@ const Homepage = async ({ searchParams: { category, endcursor } }: Props) => {
         <Categories />
 
         <p className="no-result-text text-center">
-          No projects found, 😥. Click <Link href="/create-project">Share Project</Link> to get
+          No projects found, 😥. Click <Link href="/create-project" className="font-semibold text-primary-purple">Share Project</Link> to get
           started.
         </p>
       </section>
