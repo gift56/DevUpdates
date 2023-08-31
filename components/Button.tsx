@@ -29,10 +29,10 @@ const Button = ({
         ${textColor ? textColor : "text-white"} 
         ${
           submitting ? "bg-black/50" : bgColor ? bgColor : "bg-primary-purple"
-        } rounded-xl text-sm font-medium max-md:w-full hover:opacity-95 transition-all duration-300 disabled:opacity-90 disabled:cursor-not-allowed`}
+        } rounded-xl text-base font-medium max-md:w-full hover:opacity-95 transition-all duration-300 disabled:opacity-90 disabled:cursor-not-allowed`}
     onClick={handleClick}
   >
-    {leftIcon && <BiPlus />}
+    {leftIcon && <BiPlus size={25} />}
     {title}
     {/* {rightIcon && (
       <Image src={rightIcon} width={14} height={14} alt="right icon" />
